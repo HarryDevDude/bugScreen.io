@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+}
+
+.outer-grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  
+   /* Took the grid-gap off for accessiblity reasons of bigger hitboxes */
+  /* grid-gap: 1px; */
+  
+}
+
+.outer-grid > div {
+  /* background-color: white; */
+  color: ivory;
+  text-align: right;
+  font-size: 4vw;
+  
+  /* Took the padding off for accessiblity reasons of bigger hitboxes */
+  /* padding: 5px; */
+
+  /* weird little animation when game first loads. Kinda cool. */
+  /* transition: all 3s ease-in-out; */
+}
+
+/* Since the whole collection of divs are selectable, there's some neat things that can be done */
+/* .outer-grid > div:hover {
+  transform: rotate(90deg);
+} */
+
+.inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+   /* Took the grid-gap off for accessiblity reasons of bigger hitboxes */
+  /* grid-gap: 5px; */
+  
+}
+.computerScreen {
+  background: lightslategray;
+  padding: 1px;
+  
+}
+
+.bug {
+  background-color: salmon;
+  background-image: url(img/bugWhite.svg);
+
+/* position: absolute; <-why? causes weird error(s) with divs*/
+}
+
+.startBtn {
+  padding: 15px 45px;
+  font-weight: bold;
+  background-color: ivory;
+  border-radius: 20px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#score {
+  margin: 90px;
+}

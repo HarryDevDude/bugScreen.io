@@ -1,0 +1,34 @@
+***Trying out HTML Canvas and made some shapes. At the end I decided that learning a whole new concept while doing a project is out of the scope.
+
+
+let canvas = document.querySelector('canvas')
+// let rc = document.getElementByClass('rectangle').getContext('2d');
+// let cir = document.getElementByClass('circle').getContext('2d');
+
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
+
+const c = canvas.getContext('2d')
+let rc = canvas.getContext('2d');
+let cir = canvas.getContext('2d');
+// I want a paint 2D paint brush
+c.fillStyle = 'green';
+c.fillRect(100, 100, 100, 100);
+
+
+// I want to paint a rectangle with: (X, Y, width, height)
+// How your paint brush knows where to start to paint is with the x and y coordinates.
+// They start on the top left and left corner of the window and from there they move 
+// to the right (X) and then down (Y).
+// After that, they form the shape with how wide (width) and tall (height) it is.
+
+
+// rectangle
+rc.rect(325, 300, 300, 200);
+rc.fillStyle = 'blue';
+  rc.fill();
+
+// Cirle
+cir.arc(780, 200, 120, 0, 2*Math.PI);
+  cir.fillStyle = 'black';
+    cir.fill()

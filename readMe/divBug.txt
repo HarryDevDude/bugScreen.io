@@ -1,0 +1,70 @@
+**Copy of the formated 'bug' class within the div of 'computerScreen'. Just didn't want to type it out or leave it in the index.html as a commented out section.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="css/style.css"> 
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+ 
+  <div class="outer-grid"> 
+    <div class="inner-grid" id="quadrantTopLeft">
+        <div class="a1 computerScreen"><div class='bug'>0</div></div>
+        <div class="b1 computerScreen"><div class='bug'>0</div></div>
+        <div class="c1 computerScreen"><div class='bug'>0</div></div>
+        <div class="d1 computerScreen"><div class='bug'>0</div></div>
+        <div class="e1 computerScreen"><div class='bug'>0</div></div>
+        <div class="f1 computerScreen"><div class='bug'>0</div></div>
+        <div class="g1 computerScreen"><div class='bug'>0</div></div>
+        <div class="h1 computerScreen"><div class='bug'>0</div></div>
+        <div class="i1 computerScreen"><div class='bug'>0</div></div>
+    </div>
+    <div class="inner-grid" id="quadrantTopRight">
+      <div class="a2 computerScreen"><div class='bug'>0</div></div>
+      <div class="b2 computerScreen"><div class='bug'>0</div></div>
+      <div class="c2 computerScreen"><div class='bug'>0</div></div>
+      <div class="d2 computerScreen"><div class='bug'>0</div></div>
+      <div class="e2 computerScreen"><div class='bug'>0</div></div>
+      <div class="f2 computerScreen"><div class='bug'>0</div></div>
+      <div class="g2 computerScreen"><div class='bug'>0</div></div>
+      <div class="h2 computerScreen"><div class='bug'>0</div></div>
+      <div class="i2 computerScreen"><div class='bug'>0</div></div>
+    </div>
+    <div class="inner-grid" id="quadrantBottomLeft">
+      <div class="a3 computerScreen"><div class='bug'>0</div></div>
+      <div class="b3 computerScreen"><div class='bug'>0</div></div>
+      <div class="c3 computerScreen"><div class='bug'>0</div></div>
+      <div class="d3 computerScreen"><div class='bug'>0</div></div>
+      <div class="e3 computerScreen"><div class='bug'>0</div></div>
+      <div class="f3 computerScreen"><div class='bug'>0</div></div>
+      <div class="g3 computerScreen"><div class='bug'>0</div></div>
+      <div class="h3 computerScreen"><div class='bug'>0</div></div>
+      <div class="i3 computerScreen"><div class='bug'>0</div></div>
+    </div>
+    <div class="inner-grid" id="quadrantBottomRight">
+      <div class="a4 computerScreen"><div class='bug'>0</div></div>
+      <div class="b4 computerScreen"><div class='bug'>0</div></div>
+      <div class="c4 computerScreen"><div class='bug'>0</div></div>
+      <div class="d4 computerScreen"><div class='bug'>0</div></div>
+      <div class="e4 computerScreen"><div class='bug'>0</div></div>
+      <div class="f4 computerScreen"><div class='bug'>0</div></div>
+      <div class="g4 computerScreen"><div class='bug'>0</div></div>
+      <div class="h4 computerScreen"><div class='bug'>0</div></div>
+      <div class="i4 computerScreen"><div class='bug'>0</div></div>
+    </div>
+  </div>
+<div class="buttons">
+  <button class="startBtn">START</button>
+  <button class="stopBtn">STOP</button>
+</div>
+<h2 id="score">0</h2>
+
+</body>
+
+</html>

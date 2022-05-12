@@ -1,0 +1,229 @@
+// https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
+const canvas = document.querySelector('canvas');
+let rc = document.getElementById('rectangle').getContext('2d');
+let cir = document.getElementById('circle').getContext('2d');
+
+
+canvas.width = window.innerWidth;
+// you can omit the 'window.' and it will still work
+canvas.height = window.innerHeight;
+// 
+
+// const c = canvas.getContext('2d')
+// I want a paint 2D paint brush
+// c.fillStyle = 'green';
+// c.fillRect(100, 100, 100, 100)
+// I want to paint a rectangle with: (X, Y, width, height)
+// How your paint brush knows where to start to paint is with the x and y coordinates.
+// They start on the top left and left corner of the window and from there they move 
+// to the right (X) and then down (Y).
+// After that, they form the shape with how wide (width) and tall (height) it is.
+
+
+// rectangle
+rc.rect(325, 300, 300, 200);
+rc.fillStyle = 'blue';
+  rc.fill();
+
+// Cirle
+cir.arc(385, 410, 120, 0, 2*Math.PI);
+  cir.fillStyle = 'purple';
+    cir.fill()
+
+// Icons
+// Objective targets for player to click on AND/OR to hover on and keyboard event
+
+// class objIcon  {
+//   constructor (x, y, radius, color, velocity)
+//   this.x = x
+//   this.y = y
+//   this.radius = radius
+//   this.color = color
+//   this.velocity. velocity
+// }
+
+// function spawnIcon() {
+//   setInterval(() => {
+//     console.log('go')
+//     interval
+//   }, 1000);
+// }
+
+
+/* Josh Notes */
+//JS
+
+// set array
+
+// display to !none 
+
+// setTimeout
+
+// setInterval(() => {
+  
+// }, interval);
+
+// or createElement to create the grid
+
+// CSS
+/* fade in and fade out. */
+
+// HTML
+<!-- add a value atrrabute grab the event.target. find the div that the user clicked on give me the value and increment the score -->
+
+
+8:10 am
+5/6/22
+made the grid and applied naming conventions and logic that makes sense
+
+Need to make a button that starts the game.
+When game starts, it will pick a random quadrant and then a child of that
+
+
+// function pickQuadrant (innerGrid){
+//   return innerGrid[Math.floor(Math.random()*innerGrid.lenth)]
+// }
+
+// innerGrid = []
+
+
+const outerGrid = document.querySelector('.outer-grid')
+const innerGrid = document.querySelector('.inner-grid')
+// const quadTopLeft = document.querySelector('#quadrantTopLeft')
+// const quadTopRight = document.querySelector('#quadrantTopRight')
+// const quadBotLeft = document.querySelector('#quadrantBottomLeft')
+// const quadBotRight = document.querySelector('#quadrantBottomRight')
+const bug = document.querySelector('bug')
+const score = document.querySelector('score')
+let result = 0
+// const allDivs = document.querySelectorAll('div')
+
+// made nodelist from the class inner-grid in order to convert them into an array
+const allClickable = document.querySelectorAll('.inner-grid div')
+// console.log(allClickable);
+// 11;49pm 5/7/22
+// found a vid that shows how to log the desired nodes!
+// https://youtu.be/3Ut6LQMpGkA
+
+// changed nodelist into an array!
+let arrlist = Array.from(allClickable)
+// console.log(arrlist);
+
+function random
+
+let randomAppear = arrlist[Math.floor(Math.random() * arrlist.length)];
+// console.log(randomAppear);
+randomAppear.classList.add('bug')
+
+function whenAppear() {
+  let timer = null
+  timer = setInterval(randomAppear, 10)
+}
+
+whenAppear()
+
+
+
+
+
+
+
+
+
+
+// use this to tie it to a button. https://youtu.be/rVcphsUupws Cuz right now it only will pick a random div if I refresh the page due to it logging it for that one time.
+
+
+
+
+// I want my program to pick a random quadrant then a random div and then populate it with an Image. change the background-image
+
+// function pickQuadrant (innerGrid){
+
+// }
+
+// need to make image as a clickable and tell program true/false for correct user event. Can disable browser spacebar function
+// https://code-boxx.com/allow-one-click-javascript/#sec-one
+
+
+// clicking on a div tells me what div and quadrant I clicked on
+// Need to make sure that ONLY the div is clickable
+    outerGrid.addEventListener('click', (e) => {
+      if (e.target.classList.contains('clickable'))
+      {
+        e.target.style.backgroundColor = 'white';
+        console.log(e.target)
+      }
+    }) 
+
+// const five = Array.from(innerGrid)
+// console.log(five);
+
+// look within 'five' and see if there are any 'clickable' items if true then run this program
+// console.log(five.includes (classList.contains('clickable')));
+
+      // const test = Array.from(allDivs)
+      // console.log(test.includes(allDivs.clickable))
+
+      // console.log(test)
+
+// Array.from(document.getElementsByClassName("item")).some(({classList}) =>
+//    classList.contains('active'))
+
+// look up target.classList
+// look up .array.includes 
+
+// Possible Solution
+// I think I found a solution to log all of the divs as a NodeList.
+// https://youtu.be/gCfx8MVXvDk
+
+
+
+
+
+
+// console.log(arrlist);
+
+// function randomDiv(){
+//   arrlist.forEach(divSpace => {
+//     divSpace.classList.remove('bug')
+//   })
+// }
+
+
+// startBtn.addEventListener('click', () => {
+//   startBtn.style.display = "none";
+//   stopBtn.style.display = "inline-block"
+
+//   let hole;
+//   let points = 0;
+
+// let randomAppear = arrlist[Math.floor(Math.random() * 37)];
+// randomAppear.classList.add('bug')
+// console.log(Math.floor(Math.random() * arrlist.length))
+// console.log(randomAppear);
+
+
+// }, 700)
+
+
+
+
+
+
+
+
+
+
+// need to make image as a clickable and tell program true/false for correct user event. Can disable browser spacebar function
+// https://code-boxx.com/allow-one-click-javascript/#sec-one
+
+
+// clicking on a div tells me what div and quadrant I clicked on
+// Need to make sure that ONLY the div is clickable
+
+
+// Possible Solution
+// I think I found a solution to log all of the divs as a NodeList.
+// https://youtu.be/gCfx8MVXvDk
+

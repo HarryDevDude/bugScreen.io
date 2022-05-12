@@ -1,0 +1,71 @@
+**Changed the Id to better readability. Not sure if this is what I'll be going back to.
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="css/style.css"> 
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+ 
+  <div class="outer-grid"> 
+    <div class="inner-grid" id="quadrantTopLeft">
+        <div id="1a" class="computerScreen bug">0</div>
+        <div id="1b" class="computerScreen bug">0</div>
+        <div id="1c" class="computerScreen bug">0</div>
+        <div id="1d" class="computerScreen bug">0</div>
+        <div id="1e" class="computerScreen bug">0</div>
+        <div id="1f" class="computerScreen bug">0</div>
+        <div id="1g" class="computerScreen bug">0</div>
+        <div id="1h" class="computerScreen bug">0</div>
+        <div id="1i" class="computerScreen bug">0</div>
+    </div>
+    <div class="inner-grid" id="quadrantTopRight">
+      <div id="2a" class="computerScreen bug">0</div>
+      <div id="2b" class="computerScreen bug">0</div>
+      <div id="2c" class="computerScreen bug">0</div>
+      <div id="2d" class="computerScreen bug">0</div>
+      <div id="2e" class="computerScreen bug">0</div>
+      <div id="2f" class="computerScreen bug">0</div>
+      <div id="2g" class="computerScreen bug">0</div>
+      <div id="2h" class="computerScreen bug">0</div>
+      <div id="2i" class="computerScreen bug">0</div>
+    </div>
+    <div class="inner-grid" id="quadrantBottomLeft">
+      <div id="3a" class="computerScreen bug">0</div>
+      <div id="3b" class="computerScreen bug">0</div>
+      <div id="3c" class="computerScreen bug">0</div>
+      <div id="3d" class="computerScreen bug">0</div>
+      <div id="3e" class="computerScreen bug">0</div>
+      <div id="3f" class="computerScreen bug">0</div>
+      <div id="3g" class="computerScreen bug">0</div>
+      <div id="3h" class="computerScreen bug">0</div>
+      <div id="3i" class="computerScreen bug">0</div>
+    </div>
+    <div class="inner-grid" id="quadrantBottomRight">
+      <div id="4a" class="computerScreen bug">0</div>
+      <div id="4b" class="computerScreen bug">0</div>
+      <div id="4c" class="computerScreen bug">0</div>
+      <div id="4d" class="computerScreen bug">0</div>
+      <div id="4e" class="computerScreen bug">0</div>
+      <div id="4f" class="computerScreen bug">0</div>
+      <div id="4g" class="computerScreen bug">0</div>
+      <div id="4h" class="computerScreen bug">0</div>
+      <div id="4i" class="computerScreen bug">0</div>
+    </div>
+  </div>
+<div class="buttons">
+  <button class="startBtn">START</button>
+  <button class="stopBtn">STOP</button>
+</div>
+<h2 id="score">0</h2>
+
+</body>
+
+</html>
