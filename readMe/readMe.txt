@@ -77,4 +77,4 @@ I have choose HTML Canvas. Canvas will be the main body in which my game will be
 
 
 
-**The scope of the project was much more than I I could complete. But I'm still going to work in and try to implement more towards finalization.
+**The scope of the project was much more than I could complete. But I'm still going to work in and try to implement more towards finalization. Lots have changed, I have changed my mind on using HTML Canvas, it's a little bit too much for me to learn right now.
